@@ -1,13 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM Dashboard</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- Add your HTML structure here -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h1>Dashboard</h1>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="#">
+                <section>
+                    <img src="assets/icons/dashboard.png" alt="Dashboard Icon" />
+                    Dashboard
+                </section>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <section>
+                    <img src="assets/icons/product.png" alt="Product Icon" />
+                    Product
+                </section>
+                <span class="dropdown-icon"><img src="assets/icons/greater-than-symbol.png" alt="Dashboard Icon" /></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <section>
+                    <img src="assets/icons/customer.png" alt="Customers Icon" />
+                    Customers
+                </section>
+                <span class="dropdown-icon"><img src="assets/icons/greater-than-symbol.png" alt="Dashboard Icon" /></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <section>
+                    <img src="assets/icons/income.png" alt="Income Icon" />
+                    Income
+                </section>
+                <span class="dropdown-icon"><img src="assets/icons/greater-than-symbol.png" alt="Dashboard Icon" /></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <section>
+                    <img src="assets/icons/promotions.png" alt="Promote Icon" />
+                    Promote
+                </section>
+                <span class="dropdown-icon"><img src="assets/icons/greater-than-symbol.png" alt="Dashboard Icon" /></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <section>
+                    <img src="assets/icons/help.png" alt="Help Icon" />
+                    Help
+                </section>
+                <span class="dropdown-icon"><img src="assets/icons/greater-than-symbol.png" alt="Dashboard Icon" /></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header 
+            <header class="header">
+                <input type="text" class="search" placeholder="Search...">
+                <div class="user-profile">
+                    <span>Admin</span>
+                </div>
+            </header>-->
+
+        <!-- Dashboard Overview -->
+        <section class="overview">
+          <div class="overview-card">
+            <h3>Total Customers</h3>
+            <p>1234</p>
+          </div>
+          <div class="overview-card">
+            <h3>Active Customers</h3>
+            <p>567</p>
+          </div>
+          <div class="overview-card">
+            <h3>Pending Tasks</h3>
+            <p>42</p>
+          </div>
+        </section>
+
+        <!-- Customer Table -->
+        <section class="customer-table">
+          <h2>Customer List</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>+123456789</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td>+987654321</td>
+                <td>Inactive</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
