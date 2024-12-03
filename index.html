@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM Dashboard</title>
     <link rel="stylesheet" href="css/styles.css" />
-
   </head>
   <body>
     <div class="dashboard-container">
       <!-- Sidebar -->
       <aside class="sidebar">
         <div class="sidebar-header">
+          <img src="assets/icons/main-dash.png" alt="Dashboard Icon" />
           <h1>Dashboard</h1>
         </div>
         <nav>
@@ -19,54 +19,74 @@
             <li>
               <a href="#">
                 <section>
-                    <img src="assets/icons/dashboard.png" alt="Dashboard Icon" />
-                    Dashboard
+                  <img src="assets/icons/dashboard.png" alt="Dashboard Icon" />
+                  Dashboard
                 </section>
               </a>
             </li>
             <li>
               <a href="#">
                 <section>
-                    <img src="assets/icons/product.png" alt="Product Icon" />
-                    Product
+                  <img src="assets/icons/product.png" alt="Product Icon" />
+                  Product
                 </section>
-                <span class="dropdown-icon"><img src="assets/icons/greater-than-symbol.png" alt="Dashboard Icon" /></span>
+                <span class="dropdown-icon"
+                  ><img
+                    src="assets/icons/greater-than-symbol.png"
+                    alt="Dashboard Icon"
+                /></span>
               </a>
             </li>
             <li>
               <a href="#">
                 <section>
-                    <img src="assets/icons/customer.png" alt="Customers Icon" />
-                    Customers
+                  <img src="assets/icons/customer.png" alt="Customers Icon" />
+                  Customers
                 </section>
-                <span class="dropdown-icon"><img src="assets/icons/greater-than-symbol.png" alt="Dashboard Icon" /></span>
+                <span class="dropdown-icon"
+                  ><img
+                    src="assets/icons/greater-than-symbol.png"
+                    alt="Dashboard Icon"
+                /></span>
               </a>
             </li>
             <li>
               <a href="#">
                 <section>
-                    <img src="assets/icons/income.png" alt="Income Icon" />
-                    Income
+                  <img src="assets/icons/income.png" alt="Income Icon" />
+                  Income
                 </section>
-                <span class="dropdown-icon"><img src="assets/icons/greater-than-symbol.png" alt="Dashboard Icon" /></span>
+                <span class="dropdown-icon"
+                  ><img
+                    src="assets/icons/greater-than-symbol.png"
+                    alt="Dashboard Icon"
+                /></span>
               </a>
             </li>
             <li>
               <a href="#">
                 <section>
-                    <img src="assets/icons/promotions.png" alt="Promote Icon" />
-                    Promote
+                  <img src="assets/icons/promotions.png" alt="Promote Icon" />
+                  Promote
                 </section>
-                <span class="dropdown-icon"><img src="assets/icons/greater-than-symbol.png" alt="Dashboard Icon" /></span>
+                <span class="dropdown-icon"
+                  ><img
+                    src="assets/icons/greater-than-symbol.png"
+                    alt="Dashboard Icon"
+                /></span>
               </a>
             </li>
             <li>
               <a href="#">
                 <section>
-                    <img src="assets/icons/help.png" alt="Help Icon" />
-                    Help
+                  <img src="assets/icons/help.png" alt="Help Icon" />
+                  Help
                 </section>
-                <span class="dropdown-icon"><img src="assets/icons/greater-than-symbol.png" alt="Dashboard Icon" /></span>
+                <span class="dropdown-icon"
+                  ><img
+                    src="assets/icons/greater-than-symbol.png"
+                    alt="Dashboard Icon"
+                /></span>
               </a>
             </li>
           </ul>
@@ -75,58 +95,146 @@
 
       <!-- Main Content -->
       <main class="main-content">
-        <!-- Header 
-            <header class="header">
-                <input type="text" class="search" placeholder="Search...">
-                <div class="user-profile">
-                    <span>Admin</span>
+        <header class="header">
+          <div class="user-profile">
+            <span>Hello Evano</span>
+            <img src="assets/icons/hi.png" alt="Dashboard Icon" />
+          </div>
+        </header>
+        <div class="table-section">
+          <section class="customer-table">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <span style="display: block; margin-bottom: 10px">
+                <h2 style="color: #333; font-size: 22px; margin: 0">
+                  All Customers
+                </h2>
+                <p style="color: #16c098; font-size: 14px; margin: 5px 0">
+                  Active members
+                </p>
+              </span>
+              <div style="margin-right: 52px">
+                <div
+                  style="
+                    position: relative;
+                    display: inline-block;
+                    max-width: 216px;
+                    width: 100%;
+                  "
+                >
+                  <img
+                    src="assets/icons/search.png"
+                    alt="Search Icon"
+                    style="
+                      position: absolute;
+                      top: 50%;
+                      left: 10px;
+                      transform: translateY(-50%);
+                      width: 20px;
+                      height: 20px;
+                      pointer-events: none;
+                    "
+                  />
+                  <input
+                    type="text"
+                    class="search"
+                    placeholder="Search..."
+                    style="
+                      padding: 14px 10px 14px 35px; /* Extra padding on the left for the icon */
+                      border-radius: 10px;
+                      background-color: #f9fbff;
+                      width: 100%;
+                    "
+                  />
                 </div>
-            </header>-->
-
-        <!-- Dashboard Overview -->
-        <section class="overview">
-          <div class="overview-card">
-            <h3>Total Customers</h3>
-            <p>1234</p>
-          </div>
-          <div class="overview-card">
-            <h3>Active Customers</h3>
-            <p>567</p>
-          </div>
-          <div class="overview-card">
-            <h3>Pending Tasks</h3>
-            <p>42</p>
-          </div>
-        </section>
-
-        <!-- Customer Table -->
-        <section class="customer-table">
-          <h2>Customer List</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>+123456789</td>
-                <td>Active</td>
-              </tr>
-              <tr>
-                <td>Jane Smith</td>
-                <td>jane@example.com</td>
-                <td>+987654321</td>
-                <td>Inactive</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+              </div>
+            </div>
+            <table style="margin-top: 28px">
+              <thead>
+                <tr>
+                  <td style="color: #B5B7C0">Customer Name</td>
+                  <td style="color: #B5B7C0">Company</td>
+                  <td style="color: #B5B7C0">Phone Number</td>
+                  <td style="color: #B5B7C0">Email</td>
+                  <td style="color: #B5B7C0">Country</td>
+                  <td style="color: #B5B7C0">Status</td>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td>(225) 555-0118</td>
+                  <td>jane@microsoft.com</td>
+                  <td>United States</td>
+                  <td><button style="width: 80px; height: 29px; font-size: 14px; border: 1.2px solid #00B087; background-color: rgba(0, 176, 135, 0.38); border-radius: 4px "><span style="color: #008767">Active</span></button></td>
+                </tr>
+                <tr>
+                  <td>Floyd Miles</td>
+                  <td>Yahoo</td>
+                  <td>(205) 555-0100</td>
+                  <td>floyd@yahoo.com</td>
+                  <td>Kiribati</td>
+                  <td><button style="width: 80px; height: 29px; font-size: 14px; border: 1.2px solid #DF0404; background-color: #FFC5C5; border-radius: 4px "><span style="color: #DF0404">Active</span></button></td>
+                </tr>
+                <tr>
+                  <td>Ronald Richards</td>
+                  <td>Adobe</td>
+                  <td>(302) 555-0107</td>
+                  <td>ronald@adobe.com</td>
+                  <td>Israel</td>
+                  <td><button style="width: 80px; height: 29px; font-size: 14px; border: 1.2px solid #DF0404; background-color: #FFC5C5; border-radius: 4px "><span style="color: #DF0404">Inactive</span></button></td>
+                </tr>
+                <tr>
+                  <td>Marvin McKinney</td>
+                  <td>Tesla</td>
+                  <td>(252) 555-0126</td>
+                  <td>marvin@tesla.com</td>
+                  <td>Iran</td>
+                  <td><button style="width: 80px; height: 29px; font-size: 14px; border: 1.2px solid #00B087; background-color: rgba(0, 176, 135, 0.38); border-radius: 4px "><span style="color: #008767">Active</span></button></td>
+                </tr>
+                <tr>
+                  <td>Jerome Bell</td>
+                  <td>Google</td>
+                  <td>(629) 555-0129</td>
+                  <td>jerome@google.com</td>
+                  <td>Réunion</td>
+                  <td><button style="width: 80px; height: 29px; font-size: 14px; border: 1.2px solid #00B087; background-color: rgba(0, 176, 135, 0.38); border-radius: 4px "><span style="color: #008767">Active</span></button></td>
+                </tr>
+                <tr>
+                  <td>Kathryn Murphy</td>
+                  <td>Microsoft</td>
+                  <td>(406) 555-0120</td>
+                  <td>kathryn@microsoft.com</td>
+                  <td>Curaçao</td>
+                  <td><button style="width: 80px; height: 29px; font-size: 14px; border: 1.2px solid #00B087; background-color: rgba(0, 176, 135, 0.38); border-radius: 4px "><span style="color: #008767">Active</span></button></td>
+                </tr>
+                <tr>
+                  <td>Jacob Jones</td>
+                  <td>Yahoo</td>
+                  <td>(208) 555-0112</td>
+                  <td>jacob@yahoo.com</td>
+                  <td>Brazil</td>
+                  <td><button style="width: 80px; height: 29px; font-size: 14px; border: 1.2px solid #00B087; background-color: rgba(0, 176, 135, 0.38); border-radius: 4px "><span style="color: #008767">Active</span></button></td>
+                </tr>
+                <tr>
+                  <td>Kristin Watson</td>
+                  <td>Facebook</td>
+                  <td>(704) 555-0127</td>
+                  <td>kristin@facebook.com</td>
+                  <td>Åland Islands</td>
+                  <td><button style="width: 80px; height: 29px; font-size: 14px; border: 1.2px solid #DF0404; background-color: #FFC5C5; border-radius: 4px "><span style="color: #DF0404">Inactive</span></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
       </main>
     </div>
     <script src="js/script.js"></script>
